@@ -9,7 +9,6 @@ services:
     health_check:
       http_path: /api/health
     routes:
-      - Path: /
       - Path: /grafana
   - name: prometheus
     github:
