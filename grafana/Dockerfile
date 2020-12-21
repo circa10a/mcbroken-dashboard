@@ -4,7 +4,7 @@ RUN mkdir -p /etc/grafana/provisioning/datasources/ && \
 # Dashboards provisioning config
 COPY ./grafana/dashboards.yaml /etc/grafana/provisioning/dashboards/dashboards.yaml
 # Copy dashboards
-# COPY ./grafana/dashboards/*.json /etc/grafana/provisioning/dashboards/
+COPY ./grafana/dashboards/*.json /etc/grafana/provisioning/dashboards/
 # Datasources provisioning config
 COPY ./grafana/datasources.yaml /etc/grafana/provisioning/datasources/datasources.yaml
 # Grafana config
