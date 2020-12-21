@@ -8,4 +8,4 @@ COPY ./grafana/dashboards/*.json /etc/grafana/provisioning/dashboards/
 # Datasources provisioning config
 COPY ./grafana/datasources.yaml /etc/grafana/provisioning/datasources/datasources.yaml
 # Grafana config
-COPY ./grafana/grafana.ini /var/lib/grafana/grafana.ini
+COPY ./grafana/grafana.ini /etc/grafana/grafana.ini
