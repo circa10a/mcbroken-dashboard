@@ -5,9 +5,10 @@ Entry for digitalocean app platform hackathon
 ![Build Status](https://github.com/circa10a/digitalocean-hackathon/workflows/deploy/badge.svg)
 ![alt text](https://img.shields.io/badge/Digital%20Ocean-Deployed-blue)
 
-[**Access the mcbroken dashboard by clicking here**](https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana/d/TmWLGVxMz/broken-mcdonalds-ice-cream-machines-in-the-us?orgId=1)
+[** **Access the mcbroken dashboard by clicking here** **](https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana/d/TmWLGVxMz/broken-mcdonalds-ice-cream-machines-in-the-us?orgId=1)
 
-![alt text](https://i.imgur.com/4Ib3Z8G.jpg)
+<img src="https://i.imgur.com/4Ib3Z8G.jpg" height="50%" width="50%" align="right"/>
+
 
 ## Mcbroken Dashboard Overview
 
