@@ -2,7 +2,7 @@
 github_repo: &github_repo
   github:
     repo: circa10a/digitalocean-hackathon
-    branch: dev
+    branch: main
 
 name: mcbroken-dashboard
 services:

@@ -41,7 +41,7 @@ There are 3 components(services) that make up this application.
 
 The primary component is a custom prometheus exporter that collects data from [mcbroken.com](https://mcbroken.com)
 
-Technical components(go files) are located in the root of the repo.
+Technical components(go files) are located in the root of the repo and is deployed via the go buildpack.
 
 #### Development
 
@@ -66,14 +66,16 @@ Access prometheus here: https://mcbroken-dashboard-t7vfw.ondigitalocean.app/
 
 [Prometheus](https://prometheus.io/) is an an open source time series database that scrapes our custom exporter on short intervals and holds the data for 15 days by default.
 
-Prometheus application and deployment configuration is housed in the [prometheus directory](/prometheus).
+Prometheus application and deployment configuration is housed in the [prometheus directory](/prometheus) and is deployed via [Dockerfile](/prometheus/Dockerfile).
 
 ### Grafana
 
 Access Grafana here: https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana
 
-[Grafana](https://grafana.com/) is an open source dashboard front end that has the ability to connect to a variety of different data sources such as prometheus. Grafan application and deployment configuration is housed in the [grafana directory](/grafana).
+[Grafana](https://grafana.com/) is an open source dashboard front end that has the ability to connect to a variety of different data sources such as prometheus. Grafan application and deployment configuration is housed in the [grafana directory](/grafana) and is deployed via [Dockerfile](/grafana/Dockerfile).
 
 ## Deployment
 
-Deployments are handled by github actions in the [.github/workflows directory](/.github/workflows) by using the [digitalocean CLI(doctl)](https://www.digitalocean.com/docs/apis-clis/doctl/how-to/install/) to update the app specfication for all of the components.
+Deployments are handled by github actions in the [.github/workflows directory](/.github/workflows) by using the [digitalocean CLI(doctl)](https://www.digitalocean.com/docs/apis-clis/doctl/how-to/install/) to update [the app specification](/deployment.yaml) for all of the components.
+
+<img src="https://i.imgur.com/t1N6bjH.png" height="50%" width="50%"/>
