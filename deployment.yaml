@@ -1,0 +1,22 @@
+name: mcbroken-dashboard
+services:
+  - name: grafana
+    github:
+      repo: circa10a/digitalocean-hackathon
+      branch: dev
+    dockerfile_path: grafana/Dockerfile
+    http_port: 3000
+    health_check:
+      http_path: /api/health
+    # routes:
+    #   - /grafana
+  - name: prometheus
+    github:
+      repo: circa10a/digitalocean-hackathon
+      branch: dev
+    dockerfile_path: prometheus/Dockerfile
+    http_port: 9090
+    health_check:
+      http_path: /-/healthy
+    routes:
+    - Path: '/prometheus'
