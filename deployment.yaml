@@ -11,7 +11,7 @@ services:
     envs:
     - key: GF_SERVER_ROOT_URL
       scope: RUN_TIME
-      value: ${PUBLIC_URL}
+      value: ${_self.PUBLIC_URL}
     routes:
     - Path: /grafana
   - name: prometheus
