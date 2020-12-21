@@ -19,7 +19,7 @@ services:
       repo: circa10a/digitalocean-hackathon
       branch: dev
     dockerfile_path: prometheus/Dockerfile
-    run_command: --web.external-url=${PROM_URL}
+    run_command: --web.external-url=${PROM_URL} --storage.tsdb.path=/prometheus
     http_port: 9090
     health_check:
       http_path: /-/healthy
