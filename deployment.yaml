@@ -30,4 +30,4 @@ services:
     health_check:
       http_path: /metrics
     routes:
-      - Path: /mcbroken-metrics
+      - Path: /mcbroken

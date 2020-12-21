@@ -39,6 +39,8 @@ There are 3 components(services) that make up this application.
 
 ### Mcbroken exporter
 
+Access the exporter metrics here: https://mcbroken-dashboard-t7vfw.ondigitalocean.app/mcbroken/metrics
+
 The primary component is a custom prometheus exporter that collects data from [mcbroken.com](https://mcbroken.com)
 
 Technical components(go files) are located in the root of the repo and is deployed via the go buildpack.
