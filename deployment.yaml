@@ -1,10 +1,13 @@
 ---
+github_repo: &github_repo
+  github:
+    repo: circa10a/digitalocean-hackathon
+    branch: dev
+
 name: mcbroken-dashboard
 services:
   - name: grafana
-    github:
-      repo: circa10a/digitalocean-hackathon
-      branch: dev
+    << : *github_repo
     dockerfile_path: grafana/Dockerfile
     http_port: 3000
     health_check:
@@ -16,17 +19,13 @@ services:
     routes:
       - Path: /grafana
   - name: prometheus
-    github:
-      repo: circa10a/digitalocean-hackathon
-      branch: dev
+    << : *github_repo
     dockerfile_path: prometheus/Dockerfile
     http_port: 9090
     health_check:
       http_path: /-/healthy
   - name: exporter
-    github:
-      repo: circa10a/digitalocean-hackathon
-      branch: dev
+    << : *github_repo
     http_port: 8080
     health_check:
       http_path: /metrics

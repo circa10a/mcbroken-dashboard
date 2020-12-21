@@ -1,0 +1,19 @@
+---
+name: deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+      - name: Update app spec
+        run: doctl apps update $(doctl apps list | grep mcbroken | awk '{print $1}') --spec deployment.yaml
+      - name: Trigger deployment
+        run: doctl apps create-deployment $(doctl apps list | grep mcbroken | awk '{print $1}')
