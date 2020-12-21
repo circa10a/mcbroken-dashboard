@@ -2,7 +2,7 @@
 
 Entry for digitalocean app platform hackathon
 
-[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/circa10a/mcmbroken-dashboard/tree/main})
+[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/circa10a/mcbroken-dashboard/tree/main})
 
 ![Build Status](https://github.com/circa10a/digitalocean-hackathon/workflows/deploy/badge.svg)
 
