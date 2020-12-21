@@ -2,6 +2,7 @@
 github_repo: &github_repo
   github:
     repo: circa10a/digitalocean-hackathon
+    deploy_on_push: true
     branch: dev
 
 name: mcbroken-dashboard
