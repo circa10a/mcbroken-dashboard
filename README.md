@@ -1,18 +1,16 @@
 # mcbroken-dashboard <img src="https://i.imgur.com/tyKUBDv.png" height="5%" width="5%" align="left"/>
 
-Entry for digitalocean app platform hackathon
+Entry for digitalocean app platform hackathon. Deploy your own by clicking the button below!
 
 [![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/circa10a/mcbroken-dashboard/tree/main)
 
 ![Build Status](https://github.com/circa10a/digitalocean-hackathon/workflows/deploy/badge.svg)
 
-[** **Access the mcbroken dashboard by clicking here** **](https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana/d/TmWLGVxMz/broken-mcdonalds-ice-cream-machines-in-the-us?orgId=1)
-
 <img src="https://i.imgur.com/4Ib3Z8G.jpg" height="50%" width="50%" align="right"/>
 
 ## Mcbroken Dashboard Overview
 
-The mcbroken dashboard is a grafana dashboard which is powered by [mcbroken.com](https://mcbroken.com). It's purpose is to provide availability information of all the broken Mcdonald's ice cream machines in the United States.
+The mcbroken dashboard is an app template of 3 applications(listed below) which pre-configure a dashboard that is powered by [mcbroken.com](https://mcbroken.com). It's purpose is to provide availability information of all the broken Mcdonald's ice cream machines in the United States.
 
 Stats include:
 

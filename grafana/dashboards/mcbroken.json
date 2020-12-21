@@ -288,6 +288,7 @@
       "targets": [
         {
           "expr": "mcbroken{}",
+          "instant": true,
           "interval": "",
           "legendFormat": "{{city}}",
           "refId": "A"
