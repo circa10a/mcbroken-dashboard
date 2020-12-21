@@ -9,7 +9,6 @@ Entry for digitalocean app platform hackathon
 
 <img src="https://i.imgur.com/4Ib3Z8G.jpg" height="50%" width="50%" align="right"/>
 
-
 ## Mcbroken Dashboard Overview
 
 Visit the mcbroken dashboard is a grafana dashboard which is powered by [mcbroken.com](https://mcbroken.com). It's purpose is to provide availability information of all the broken Mcdonald's ice cream machines in the United States.
@@ -24,11 +23,11 @@ Stats include:
 
 ### Desktop view
 
-<img src="https://i.imgur.com/tyKUBDv.png" height="50%" width="50%"/>
+<img src="https://i.imgur.com/okz3zQO.png" height="50%" width="50%"/>
 
 ### Mobile view
 
-<img src="https://i.imgur.com/l5tkTQi.png" height="50%" width="50%"/>
+<img src="https://i.imgur.com/I5tkTQi.png" height="50%" width="50%"/>
 
 ## Components
 
