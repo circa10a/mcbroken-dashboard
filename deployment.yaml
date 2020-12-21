@@ -8,6 +8,12 @@ services:
     http_port: 3000
     health_check:
       http_path: /api/health
+    envs:
+    - key: GF_SERVER_ROOT_URL
+      scope: RUN_TIME
+      value: ${PUBLIC_URL}
+    routes:
+    - Path: /grafana
   - name: prometheus
     github:
       repo: circa10a/digitalocean-hackathon
