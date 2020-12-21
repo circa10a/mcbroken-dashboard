@@ -11,7 +11,7 @@ Entry for digitalocean app platform hackathon
 
 ## Mcbroken Dashboard Overview
 
-Visit the mcbroken dashboard is a grafana dashboard which is powered by [mcbroken.com](https://mcbroken.com). It's purpose is to provide availability information of all the broken Mcdonald's ice cream machines in the United States.
+The mcbroken dashboard is a grafana dashboard which is powered by [mcbroken.com](https://mcbroken.com). It's purpose is to provide availability information of all the broken Mcdonald's ice cream machines in the United States.
 
 Stats include:
 
@@ -60,13 +60,17 @@ Accessible at http://localhost:8080/metrics
 
 ### Prometheus
 
+Access prometheus here: https://mcbroken-dashboard-t7vfw.ondigitalocean.app/
+
 > It's worth nothing that stateful workloads such as prometheus are not ideal for the digitalocean app platform in its current state as of 12/2020. This is due to prometheus needing persistent storage to reliably hold data. The app platform currently only supports ephemeral storage. Prometheus would be better served on a droplet, but it was a good learning experience to wire up all of these componentes together on the app platform.
 
 [Prometheus](https://prometheus.io/) is an an open source time series database that scrapes our custom exporter on short intervals and holds the data for 15 days by default.
 
-Prometheus application and deployment configuration is housed in the [prometheus directory](/prometheus)
+Prometheus application and deployment configuration is housed in the [prometheus directory](/prometheus).
 
 ### Grafana
+
+Access Grafana here: https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana
 
 [Grafana](https://grafana.com/) is an open source dashboard front end that has the ability to connect to a variety of different data sources such as prometheus. Grafan application and deployment configuration is housed in the [grafana directory](/grafana).
 
