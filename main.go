@@ -65,7 +65,7 @@ func recordMetrics() {
 				mcbrokenCities.With(prometheus.Labels{"city": mcbroken.CityName}).Set(mcbroken.BrokenPercentage)
 			}
 			mcbrokenCities.With(prometheus.Labels{"city": "all"}).Set(data.BrokenPercentage)
-			time.Sleep(30 * time.Second)
+			time.Sleep(15 * time.Minute)
 		}
 	}()
 }

@@ -20,4 +20,13 @@ services:
     health_check:
       http_path: /-/healthy
     routes:
-    - Path: '/prometheus'
+    - Path: /prometheus
+  - name: exporter
+    github:
+      repo: circa10a/digitalocean-hackathon
+      branch: dev
+    http_port: 8080
+    health_check:
+      http_path: /metrics
+    routes:
+    - Path: /mcbroken-metrics
