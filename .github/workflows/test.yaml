@@ -1,0 +1,21 @@
+---
+name: test
+on: [
+  push,
+  pull_request
+]
+jobs:
+  test-yaml:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-ruby@v1
+    - run: test/validate-yaml.rb
+  golangci-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v2
+        with:
+          version: v1.33
