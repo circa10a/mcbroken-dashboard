@@ -1,9 +1,10 @@
-# digitalocean-hackathon(mcbroken dashboard) <img src="https://i.imgur.com/tyKUBDv.png" height="5%" width="5%" align="left"/>
+# mcbroken-dashboard <img src="https://i.imgur.com/tyKUBDv.png" height="5%" width="5%" align="left"/>
 
 Entry for digitalocean app platform hackathon
 
+[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/circa10a/mcmbroken-dashboard/tree/main})
+
 ![Build Status](https://github.com/circa10a/digitalocean-hackathon/workflows/deploy/badge.svg)
-![alt text](https://img.shields.io/badge/Digital%20Ocean-Deployed-blue)
 
 [** **Access the mcbroken dashboard by clicking here** **](https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana/d/TmWLGVxMz/broken-mcdonalds-ice-cream-machines-in-the-us?orgId=1)
 
@@ -78,6 +79,6 @@ Access Grafana here: https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana
 
 ## Deployment
 
-Deployments are handled by github actions in the [.github/workflows directory](/.github/workflows) by using the [digitalocean CLI(doctl)](https://www.digitalocean.com/docs/apis-clis/doctl/how-to/install/) to update [the app specification](/deployment.yaml) for all of the components.
+Deployments are handled by github actions in the [.github/workflows directory](/.github/workflows) by using the [digitalocean CLI(doctl)](https://www.digitalocean.com/docs/apis-clis/doctl/how-to/install/) to update [the app template](/deployment.yaml) for all of the components.
 
 <img src="https://i.imgur.com/t1N6bjH.png" height="80%" width="80%"/>
