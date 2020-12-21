@@ -23,11 +23,11 @@ Stats include:
 
 ### Desktop view
 
-<img src="https://i.imgur.com/okz3zQO.png" height="50%" width="50%"/>
+<img src="https://i.imgur.com/okz3zQO.png" height="70%" width="70%"/>
 
 ### Mobile view
 
-<img src="https://i.imgur.com/I5tkTQi.png" height="50%" width="50%"/>
+<img src="https://i.imgur.com/I5tkTQi.png" height="30%" width="30%"/>
 
 ## Components
 
