@@ -1,3 +1,4 @@
+---
 global:
   scrape_interval:     15m
   evaluation_interval: 15s

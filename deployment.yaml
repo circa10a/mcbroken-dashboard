@@ -1,3 +1,4 @@
+---
 name: mcbroken-dashboard
 services:
   - name: grafana
