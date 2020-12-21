@@ -78,4 +78,4 @@ Access Grafana here: https://mcbroken-dashboard-t7vfw.ondigitalocean.app/grafana
 
 Deployments are handled by github actions in the [.github/workflows directory](/.github/workflows) by using the [digitalocean CLI(doctl)](https://www.digitalocean.com/docs/apis-clis/doctl/how-to/install/) to update [the app specification](/deployment.yaml) for all of the components.
 
-<img src="https://i.imgur.com/t1N6bjH.png" height="50%" width="50%"/>
+<img src="https://i.imgur.com/t1N6bjH.png" height="80%" width="80%"/>
