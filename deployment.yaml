@@ -8,8 +8,9 @@ services:
     http_port: 3000
     health_check:
       http_path: /api/health
-    # routes:
-    #   - /grafana
+    routes:
+      - Path: /
+      - Path: /grafana
   - name: prometheus
     github:
       repo: circa10a/digitalocean-hackathon
