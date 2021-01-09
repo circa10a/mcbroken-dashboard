@@ -4,7 +4,7 @@ spec:
   services:
     - name: grafana
       github:
-        repo: circa10a/digitalocean-hackathon
+        repo: circa10a/mcbroken-dashboard
         branch: main
       dockerfile_path: grafana/Dockerfile
       http_port: 3000
@@ -18,7 +18,7 @@ spec:
         - path: /grafana
     - name: prometheus
       github:
-        repo: circa10a/digitalocean-hackathon
+        repo: circa10a/mcbroken-dashboard
         branch: main
       dockerfile_path: prometheus/Dockerfile
       http_port: 9090
@@ -26,7 +26,7 @@ spec:
         http_path: /-/healthy
     - name: exporter
       github:
-        repo: circa10a/digitalocean-hackathon
+        repo: circa10a/mcbroken-dashboard
         branch: main
       http_port: 8080
       health_check:
